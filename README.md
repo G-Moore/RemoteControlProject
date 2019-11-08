@@ -4,15 +4,15 @@
 
 #### Overview
 
-This is a remote control simulation.
+* This is a remote control simulation.
 
 #### Concepts
 
-loops
+* loops
 
 #### Technologies Used
 
-java
-while loops
+* java
+* while loops
 
 #### Lesson Learned

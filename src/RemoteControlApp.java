@@ -42,7 +42,7 @@ public class RemoteControlApp {
 	// Initial prompt and instructions
 	public static void turnOn() {
 		System.out.print("To begin, turn on the remote control."
-				+ " \n    Enter \"ON\" to power remote. ");
+				+ " \n    Enter \" ON \" to power remote. ");
 	}
 
 	// Activates when "ON" provided

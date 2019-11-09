@@ -1,9 +1,7 @@
-import java.util.Scanner;
-
 public class RemoteControlApp {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		java .util.Scanner sc = new java.util.Scanner(System.in);
 		turnOn();
 		String power = sc.next();
 
@@ -11,9 +9,7 @@ public class RemoteControlApp {
 			turnOn();
 			power = sc.next();
 		}
-	//	if (power.equalsIgnoreCase("ON")) {
-	//		turningOn();
-	//}
+
 		System.out.println("Please enter the button number.");
 		String button = "";
 		do {
@@ -58,7 +54,7 @@ public class RemoteControlApp {
 					break;
 			}
 		} while (!button.equalsIgnoreCase("OFF"));
-
+		sc.close();
 	}
 
 	public static void turnOn() {

@@ -10,8 +10,10 @@ public class RemoteControlApp {
 			power = sc.next();
 		}
 		// Prompt to enter a number and initiate until "OFF" provided
-		System.out.println("Please enter the button number.");
+		turningOn();
+		System.out.print("Please enter the button number. ");
 		String button = "";
+
 		do {
 			button = sc.next();
 			if (button.equalsIgnoreCase("OFF")) {
@@ -32,7 +34,7 @@ public class RemoteControlApp {
 					pressButton();
 					break;
 				default:
-					System.out.println("Command not recognized.");
+					System.out.print("Command not recognized. ");
 					break;
 			}
 		} while (!button.equalsIgnoreCase("OFF"));
@@ -41,8 +43,7 @@ public class RemoteControlApp {
 
 	// Initial prompt and instructions
 	public static void turnOn() {
-		System.out.print("To begin, turn on the remote control."
-				+ " \n    Enter \" ON \" to power remote. ");
+		System.out.print("To begin, turn on the remote control." + " \n    Enter \" ON \" to power remote. ");
 	}
 
 	// Activates when "ON" provided
@@ -52,7 +53,7 @@ public class RemoteControlApp {
 
 	// Activates when button number provided
 	public static void pressButton() {
-		System.out.println("BOOP!");
+		System.out.print("BOOP! ");
 	}
 
 	public static void off() {

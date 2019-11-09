@@ -1,7 +1,7 @@
 public class RemoteControlApp {
 
 	public static void main(String[] args) {
-		java .util.Scanner sc = new java.util.Scanner(System.in);
+		java.util.Scanner sc = new java.util.Scanner(System.in);
 		turnOn();
 		String power = sc.next();
 		// Initiate user interaction, loop until "ON" provided
@@ -19,7 +19,7 @@ public class RemoteControlApp {
 				break;
 			}
 			switch (button) {
-				case "0":				
+				case "0":
 				case "1":
 				case "2":
 				case "3":
@@ -38,15 +38,19 @@ public class RemoteControlApp {
 		} while (!button.equalsIgnoreCase("OFF"));
 		sc.close();
 	}
-	//Initial prompt
+
+	// Initial prompt and instructions
 	public static void turnOn() {
-		System.out.print("To begin, turn on the remote control. ");
+		System.out.print("To begin, turn on the remote control."
+				+ " \n    Enter \"ON\" to power remote. ");
 	}
-	//Activates when "ON" provided
+
+	// Activates when "ON" provided
 	public static void turningOn() {
 		System.out.println("TURNING ON...");
 	}
-	//Activates when button number provided
+
+	// Activates when button number provided
 	public static void pressButton() {
 		System.out.println("BOOP!");
 	}

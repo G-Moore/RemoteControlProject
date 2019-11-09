@@ -19,33 +19,15 @@ public class RemoteControlApp {
 				break;
 			}
 			switch (button) {
-				case "0":
-					pressButton();
-					break;
+				case "0":				
 				case "1":
-					pressButton();
-					break;
 				case "2":
-					pressButton();
-					break;
 				case "3":
-					pressButton();
-					break;
 				case "4":
-					pressButton();
-					break;
 				case "5":
-					pressButton();
-					break;
 				case "6":
-					pressButton();
-					break;
 				case "7":
-					pressButton();
-					break;
 				case "8":
-					pressButton();
-					break;
 				case "9":
 					pressButton();
 					break;

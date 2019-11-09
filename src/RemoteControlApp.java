@@ -14,12 +14,54 @@ public class RemoteControlApp {
 			} if (power.equals("ON")) {
 				turningOn();
 			}
+		System.out.println("Please enter the button number.");	
+		int button = sc.nextInt();
+		
+		switch (button) {
+			case 0:
+				pressButton();
+				break;
+			case 1:
+				pressButton();
+				break;
+			case 2:
+				pressButton();
+				break;
+			case 3:
+				pressButton();
+				break;
+			case 4:
+				pressButton();
+				break;
+			case 5:
+				pressButton();
+				break;
+			case 6:
+				pressButton();
+				break;
+			case 7:
+				pressButton();
+				break;
+			case 8:
+				pressButton();
+				break;
+			case 9:
+				pressButton();
+				break;
+			default:
+				System.out.println("Command not recognized.");
+				break;
+				
+		}
 	}
 	public static void turnOn() {
 		System.out.print("To begin, turn on the remote control. ");
 	}
 	public static void turningOn() {
 		System.out.println("TURNING ON...");
+	}
+	public static void pressButton() {
+			System.out.println("BOOP!");
 	// TODO add pressButton() method
 }
 }

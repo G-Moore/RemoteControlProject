@@ -7,20 +7,20 @@ public class RemoteControlApp {
 		turnOn();
 		String power = sc.next();
 
-		while (!power.equals("ON")) {
+		while (!power.equalsIgnoreCase("ON")) {
 			turnOn();
 			power = sc.next();
 		}
-		if (power.equals("ON")) {
-			turningOn();
-		}
+	//	if (power.equalsIgnoreCase("ON")) {
+	//		turningOn();
+	//}
 		System.out.println("Please enter the button number.");
 		String button = "";
 		do {
 			button = sc.next();
-			if (button.equals("OFF")) {
+			if (button.equalsIgnoreCase("OFF")) {
 				off();
-			break;
+				break;
 			}
 			switch (button) {
 				case "0":
@@ -57,8 +57,7 @@ public class RemoteControlApp {
 					System.out.println("Command not recognized.");
 					break;
 			}
-		} while (!button.equals("OFF"));
-
+		} while (!button.equalsIgnoreCase("OFF"));
 
 	}
 
@@ -73,8 +72,9 @@ public class RemoteControlApp {
 	public static void pressButton() {
 		System.out.println("BOOP!");
 	}
+
 	public static void off() {
 		System.out.println("TURNING OFF...");
-		
+
 	}
 }

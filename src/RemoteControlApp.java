@@ -4,12 +4,12 @@ public class RemoteControlApp {
 		java .util.Scanner sc = new java.util.Scanner(System.in);
 		turnOn();
 		String power = sc.next();
-
+		// Initiate user interaction, loop until "ON" provided
 		while (!power.equalsIgnoreCase("ON")) {
 			turnOn();
 			power = sc.next();
 		}
-
+		// Prompt to enter a number and initiate until "OFF" provided
 		System.out.println("Please enter the button number.");
 		String button = "";
 		do {
@@ -38,15 +38,15 @@ public class RemoteControlApp {
 		} while (!button.equalsIgnoreCase("OFF"));
 		sc.close();
 	}
-
+	//Initial prompt
 	public static void turnOn() {
 		System.out.print("To begin, turn on the remote control. ");
 	}
-
+	//Activates when "ON" provided
 	public static void turningOn() {
 		System.out.println("TURNING ON...");
 	}
-
+	//Activates when button number provided
 	public static void pressButton() {
 		System.out.println("BOOP!");
 	}
